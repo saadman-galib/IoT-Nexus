@@ -7,9 +7,9 @@
 body {
     min-width: 100%;
     min-height: 100vh;
-    /* background-color: #f5f5f5; */
+    background-color: #f5f5f5;
     position: relative;
-    background: #333;
+    /* background: #333; */
 }
 
 /* Start of navbar */
@@ -35,7 +35,7 @@ body {
 }
 
 .nav-right-part ul li {
-    @apply mr-8 transition tracking-wider leading-5;
+    @apply mr-8 transition tracking-wider leading-5 text-white;
 }
 
 .nav-right-part ul li:hover {
@@ -47,14 +47,14 @@ body {
 .hero-section {
     @apply flex flex-col justify-center items-center min-w-full mx-auto min-h-[90vh] h-screen;
 }
-/* 
+
 .hero-section {
-    background: url("/img02.jpg") center no-repeat fixed;
+    background: url("/img21.jpg") center no-repeat fixed;
     background-size: cover;
-} */
+}
 
 .hero-title h1 {
-    @apply text-7xl font-bold text-right tracking-widest font-poppins text-white w-1/2 float-right  mr-[10%];
+    @apply text-7xl font-bold text-right tracking-widest font-poppins text-white w-1/2 float-right  mr-[10%] leading-[85px];
 }
 
 .hero-title h1 span {
