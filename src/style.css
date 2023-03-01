@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,16 +10,17 @@ body {
     background-color: #f5f5f5;
     position: relative;
     /* background: #333; */
+    overflow-x: hidden;
 }
 
 /* Start of navbar */
 .navbar {
-    @apply flex justify-between flex-row py-8 w-4/5 mx-auto absolute top-0 left-0 right-0 ;
+    @apply flex justify-between flex-row py-8 w-4/5 mx-auto absolute top-0 left-0 right-0;
 }
 
 .nav-left-part,
 .nav-right-part {
-    @apply font-shantell-sans;
+    font-family: "Red Hat Mono", monospace;
 }
 
 .nav-left-part h1 {
@@ -49,7 +50,7 @@ body {
 }
 
 .hero-section {
-    background: url("/img21.jpg") center no-repeat fixed;
+    background: url("./assets/img21.jpg") center no-repeat fixed;
     background-size: cover;
 }
 
@@ -65,3 +66,139 @@ body {
 }
 
 /* End of hero section */
+/* Start of About section */
+.about-section {
+    @apply flex flex-col justify-center items-center min-w-full mx-auto min-h-[70vh] min-h-screen h-auto max-h-max p-12 relative;
+}
+
+.about-section {
+    background: url("./assets/img02.jpg") center no-repeat fixed;
+    background-size: cover;
+    /* background-color:  */
+}
+
+.about-section-wrapper {
+    @apply w-full h-auto bg-[#0000007d] absolute top-0 left-0 right-0 bottom-0;
+}
+
+.about-section-left-part {
+    @apply flex flex-col justify-center items-center w-1/2  min-h-[70vh] h-screen mx-[10%] mr-[10%];
+}
+
+.about-section-text {
+    @apply mx-20 p-20;
+}
+
+.about-section-left-part p {
+    @apply text-lg font-medium text-left tracking-widest font-poppins text-white float-left my-5 leading-[35px];
+}
+
+.about-section-right-part {
+    @apply w-1/2 mr-[10%] ml-[5%] flex justify-center items-center min-h-[70vh] h-auto rounded-lg;
+}
+
+.about-section-right-part img {
+    @apply w-full h-full rounded-lg;
+}
+
+.about-section-2 {
+    /* background: url("./assets/img25.jpg") center no-repeat fixed;
+    background-size: cover; */
+    background-color: #fff;
+}
+
+.about-section-2 {
+    @apply flex flex-col justify-center items-center min-w-full mx-auto relative;
+}
+
+.about-section-2 p {
+    @apply text-lg font-medium text-left tracking-widest font-poppins text-black float-left my-5 leading-[35px];
+}
+
+.about-section-text {
+    @apply float-right;
+}
+
+.about-section-text ul {
+    @apply flex flex-col justify-center items-center w-full h-auto ml-40;
+}
+
+.about-section-text ul li {
+    @apply text-lg font-medium text-left tracking-widest font-poppins text-white float-left my-5 leading-[35px] list-disc;
+}
+
+.about-section-2 {
+    @apply p-10;
+}
+
+.about-section-2 h1 {
+    @apply text-7xl font-bold text-left tracking-widest font-poppins text-[#333] text-center float-left  leading-[85px];
+}
+
+.about-cards-container {
+    @apply flex flex-row justify-center items-center w-full h-auto flex-wrap;
+}
+
+.about-card {
+    @apply flex flex-col justify-center items-center w-1/4 mx-10 my-10 bg-[#0ea47a] p-5 rounded-md min-h-[350px] min-w-[300px];
+}
+
+.about-section-2 h1 {
+    font-family: "Buda", cursive;
+}
+
+.about-card h2 {
+    @apply text-2xl font-bold text-center tracking-widest font-poppins text-white float-left;
+}
+
+.about-card p {
+    @apply font-normal text-base text-white text-center leading-7;
+}
+/* End of About section */
+/* Start of IoT section */
+.iot-cards-wrapper {
+    @apply flex flex-row flex-wrap justify-center items-center min-w-full mx-auto;
+}
+
+.iot-card {
+    @apply flex flex-col items-center w-1/4 mx-10 my-10 bg-[#0ea47a] rounded-md min-h-[592px] min-w-[300px];
+}
+
+.iot-card-title h2 {
+    @apply text-2xl font-bold text-center tracking-widest font-poppins text-white float-left mt-4;
+}
+
+.iot-card-img {
+    @apply flex justify-center items-center w-full h-[228px] overflow-hidden rounded-t-md;
+}
+
+.iot-card-img img {
+    @apply w-full h-auto rounded-t-md top-0 cursor-pointer transition;
+}
+
+.iot-card img:hover{
+    @apply scale-150;
+}
+
+.iot-card-text-wrapper {
+    @apply flex flex-col justify-center items-center w-full min-h-[364px];
+}
+
+.iot-card-title,
+.iot-card-text {
+    @apply px-5;
+}
+
+.iot-card-text p {
+    @apply font-normal text-base text-white text-center leading-7 pb-5;
+}
+/* End of IoT section */
+/* Start of footer section */
+.footer-section {
+    @apply bg-[#111] text-white flex flex-col items-center min-w-full mx-auto h-auto max-h-max p-2;
+}
+
+.footer-section-wrapper {
+    @apply w-4/5 flex flex-row justify-between items-center mx-auto h-auto max-h-max p-2;
+}
+/* End of footer section */

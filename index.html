@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="./public/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.png" />
         <link rel="stylesheet" href="./src/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>IoT Nexus</title>
     </head>
     <body>
@@ -20,9 +21,7 @@
                             <a href="/basics" onclick="route()">Basics</a>
                         </li>
                         <li>
-                            <a href="/devices" onclick="route()"
-                                >Devices</a
-                            >
+                            <a href="/devices" onclick="route()">Devices</a>
                         </li>
                         <li>
                             <a href="/implementation" onclick="route()"
@@ -39,6 +38,21 @@
                 </div>
             </div>
             <div id="root"></div>
+            <div class="footer-section">
+                <div class="footer-section-wrapper">
+                    <div class="footer-section-left-part">
+                        <p>©2023 IoT Nexus. All rights reserved.</p>
+                    </div>
+                    <div class="footer-section-right-part">
+                        <p>
+                            For credits <a
+                                href="https://github.com/saadman-galib/IoT-Nexus.git"
+                               class="underline" target="_blank">visit here</a
+                            >.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <script type="module" src="./src/router.js"></script>
         <script type="module" src="./src/main.js"></script>

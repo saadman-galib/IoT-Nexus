@@ -1,3 +1,5 @@
+import { runJSAgain } from "./main.js";
+
 const route = (e) => {
     e = e || window.event;
     e.preventDefault();
@@ -22,6 +24,7 @@ const handleLocation = async () => {
         .then((response) => response.text())
         .then((html) => {
             content.innerHTML = html;
+            runJSAgain();
         });
 };
 
