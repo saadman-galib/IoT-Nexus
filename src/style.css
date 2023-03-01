@@ -15,7 +15,16 @@ body {
 
 /* Start of navbar */
 .navbar {
-    @apply flex justify-between flex-row py-8 w-4/5 mx-auto absolute top-0 left-0 right-0 z-40;
+    @apply flex justify-between flex-row py-2 w-4/5 mx-auto ;
+}
+
+.navbar-wrapper {
+    @apply flex justify-between flex-row w-full h-auto absolute top-0 left-0 right-0 z-40;
+}
+
+.navbar-wrapper{
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(5px);
 }
 
 .nav-left-part,

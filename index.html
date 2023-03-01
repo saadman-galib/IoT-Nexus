@@ -5,36 +5,38 @@
         <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.png" />
         <link rel="stylesheet" href="./src/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./src/main.css">
+        <link rel="stylesheet" href="./src/main.css" />
         <title>IoT Nexus</title>
     </head>
     <body>
         <div id="app">
-            <div class="navbar">
-                <div class="nav-left-part">
-                    <img src="./src/assets/logo.png" width="250px" alt="" />
-                </div>
-                <div class="nav-right-part">
-                    <ul>
-                        <li><a href="/" onclick="route()">Home</a></li>
-                        <li>
-                            <a href="/basics" onclick="route()">Basics</a>
-                        </li>
-                        <li>
-                            <a href="/devices" onclick="route()">Devices</a>
-                        </li>
-                        <li>
-                            <a href="/implementation" onclick="route()"
-                                >Implementation</a
-                            >
-                        </li>
-                        <li>
+            <div class="navbar-wrapper">
+                <div class="navbar">
+                    <div class="nav-left-part">
+                        <img src="./src/assets/logo.png" width="250px" alt="" />
+                    </div>
+                    <div class="nav-right-part">
+                        <ul>
+                            <li><a href="/" onclick="route()">Home</a></li>
+                            <li>
+                                <a href="/basics" onclick="route()">Basics</a>
+                            </li>
+                            <li>
+                                <a href="/devices" onclick="route()">Devices</a>
+                            </li>
+                            <li>
+                                <a href="/implementation" onclick="route()"
+                                    >Implementation</a
+                                >
+                            </li>
+                            <!-- <li>
                             <a href="/news" onclick="route()">News</a>
                         </li>
                         <li>
                             <a href="/resources" onclick="route()">Resources</a>
-                        </li>
-                    </ul>
+                        </li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div id="root"></div>
@@ -45,9 +47,12 @@
                     </div>
                     <div class="footer-section-right-part">
                         <p>
-                            For credits <a
+                            For credits
+                            <a
                                 href="https://github.com/saadman-galib/IoT-Nexus.git"
-                               class="underline" target="_blank">visit here</a
+                                class="underline"
+                                target="_blank"
+                                >visit here</a
                             >.
                         </p>
                     </div>

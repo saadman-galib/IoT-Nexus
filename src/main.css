@@ -531,19 +531,29 @@ body {
 /* Start of navbar */
 
 .navbar{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 40;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   width: 80%;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-wrapper{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 40;
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(5px);
 }
 
 .nav-left-part,
