@@ -276,6 +276,22 @@ body {
 
 /* End of Basics Application section */
 
-/* Start of basics glossary section */
+/* Start of devices hero section */
+.devices__hero-section {
+    background: url("./assets/img12.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+/* End of devices hero section */
 
-/* End of basics glossary section */
+
+/* Start of implementation hero section */
+.implementation__hero-section {
+    background: url("./assets/img10.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+/* End of implementation hero section */
+
+
+/* Start of implementation hero section */
+
+/* End of implementation hero section */
