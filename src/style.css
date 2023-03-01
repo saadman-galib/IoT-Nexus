@@ -292,6 +292,20 @@ body {
 /* End of implementation hero section */
 
 
-/* Start of implementation hero section */
+/* Start of resources hero section */
+.resources__hero-section {
+    background: url("./assets/img24.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+/* End of resources hero section */
 
+/* Start of news hero section */
+.news__hero-section {
+    background: url("./assets/img22.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+/* End of news hero section */
+
+
+/* Start of implementation hero section */
 /* End of implementation hero section */
