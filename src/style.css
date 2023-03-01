@@ -15,7 +15,7 @@ body {
 
 /* Start of navbar */
 .navbar {
-    @apply flex justify-between flex-row py-8 w-4/5 mx-auto absolute top-0 left-0 right-0;
+    @apply flex justify-between flex-row py-8 w-4/5 mx-auto absolute top-0 left-0 right-0 z-40;
 }
 
 .nav-left-part,
@@ -176,7 +176,7 @@ body {
     @apply w-full h-auto rounded-t-md top-0 cursor-pointer transition;
 }
 
-.iot-card img:hover{
+.iot-card img:hover {
     @apply scale-150;
 }
 
@@ -202,3 +202,80 @@ body {
     @apply w-4/5 flex flex-row justify-between items-center mx-auto h-auto max-h-max p-2;
 }
 /* End of footer section */
+/* Start of Basics Hero Section */
+.basics__hero-section {
+    background: url("./assets/img14.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+.basics__hero-section-color-wrapper {
+    @apply flex flex-col justify-center items-center min-w-full mx-auto min-h-[70vh] min-h-screen h-auto max-h-max p-12 relative;
+}
+
+/* End of Basics Hero Section */
+/* Start of Basics iot evolution section */
+.iot_evolution__wrapper {
+    @apply flex flex-col justify-center items-center p-12 w-4/5 mx-auto;
+}
+.iot_evolution__title {
+    @apply text-7xl font-bold text-left tracking-widest font-poppins text-[#333] text-center float-left  leading-[85px];
+}
+
+.iot_evolution__title {
+    font-family: "Buda", cursive;
+}
+
+.iot_evolution__text {
+    @apply mt-12 text-lg font-medium text-left tracking-widest font-poppins text-[#333] float-left leading-[35px];
+}
+
+.iot_evolution__text p {
+    @apply my-8;
+}
+
+/* End of Basics iot evolution section */
+/* Start of Basics advantage disadvantage section */
+.advantage-disadvantage-wrapper {
+    @apply flex flex-col justify-center items-center p-12 w-4/5 mx-auto;
+}
+
+.advantage-disadvantage-title {
+    @apply text-7xl font-bold text-left tracking-widest font-poppins text-[#333] text-center float-left  leading-[85px] my-12;
+}
+
+.advantage-disadvantage-title {
+    font-family: "Buda", cursive;
+}
+
+.advantage-disadvantage-text,
+.ad-disad-wrapper {
+    @apply flex flex-row justify-center items-center w-full h-auto flex-wrap;
+}
+
+.ad-disad-card {
+    @apply flex flex-col justify-center items-center w-1/4 mx-10 my-10 bg-[#0ea47a] p-5 rounded-md min-h-[350px] min-w-[300px];
+}
+
+.ad-disad-card h2 {
+    @apply text-2xl font-bold text-center tracking-widest font-poppins text-white float-left mb-5;
+}
+
+.ad-disad-card p {
+    @apply font-normal text-lg text-white text-center leading-7;
+}
+
+/* End of Basics advantage disadvantage section */
+/* Start of Basics Application section */
+.applications-list-wrapper {
+    @apply flex flex-col justify-center  p-12 w-4/5 mx-auto;
+}
+
+.applications-list-wrapper li {
+    @apply text-lg font-medium text-left tracking-widest font-poppins text-black float-left my-5 leading-[35px] list-disc;
+}
+
+/* End of Basics Application section */
+
+/* Start of basics glossary section */
+
+/* End of basics glossary section */
